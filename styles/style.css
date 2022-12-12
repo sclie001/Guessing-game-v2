@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input{
+    background-color: #262626;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    height: 460px;
+    /*border: 1px solid white;*/
+}
+
+section {
+    /*border: 1px solid white;*/
+    width: 220px;
+    height: 200px;
+    margin: 20px;
+}
+
+h1, p, input {
+    color: whitesmoke;
+    
+}
+
+h1, p, button, input {
+    font-family: VT323, monospace;
+}
+
+#title {
+    font-size: 60px;
+    text-align: center;
+}
+
+.rule-btn {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#rule {
+    font-size: medium;
+}
+
+.btn {
+    width: 90px;
+    height: 35px;
+    font-weight:600;
+}
+
+#check-btn {
+    margin: 15px;
+}
+
+#guess {
+    width: 135px;
+    height: 70px;
+    display:block;
+    border: 2px solid whitesmoke;
+}
+
+#guess, #question-mark {
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#question-mark {
+    background:lightgray;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.message-score, .btn {
+    font-size: 24px;
+}
+
+
+
+
