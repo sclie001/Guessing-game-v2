@@ -72,17 +72,26 @@ h1, p, button, input {
 }
 
 #question-mark {
-    background:lightgray;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    padding: 10px 20px;
+    display: flex;
+    color: white;
+    
+}
+
+#question-mark:before, #question-mark:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid white;
+    margin: auto;
 }
 
 .message-score, .btn {
     font-size: 24px;
 }
 
+div#question-mark-container {
+    text-align:center;
+    margin-top: 20px;
+}
 
 
 
