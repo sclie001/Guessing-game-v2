@@ -2,9 +2,9 @@ const randNum = Math.floor(Math.random() * 20);
 
 const checkBtn = document.getElementById('check-btn');
 const userInput = document.getElementById('guess');
-const message = document.getElementById('guess-message');
+const message = document.getElementById('game-message');
 
-console.log(userInput);
+console.log(randNum);
 
 function checkButton(){
     console.log('checking number...')
