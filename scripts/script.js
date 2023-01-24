@@ -14,8 +14,10 @@ function checkButton(){
     const max_tries = 10;
     let game_over = isTen(max_tries);
 
+    //if num_tries is maxed; game over!, then disable check button
     if(game_over){
         message.textContent = 'GAME OVER!! 😥';
+        checkBtn.disabled = true;
     }
     else{
         updateNumTries();
@@ -52,6 +54,6 @@ function updateNumTries(){
     ++num_tries;
 
 }
-    //else if num_tries is maxed; game over!, then disable check button
+//disable "again" button until game over
 //once player presses play again button, reset userInput and game-message, give main background it's original color
 checkBtn.addEventListener('click', checkButton);
