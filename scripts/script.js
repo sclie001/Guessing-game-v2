@@ -68,5 +68,7 @@ function enableAgainBtn(){
     playAgainBtn.disabled = false;
 }
 
-//once player presses play again button, reset userInput and game-message, give main background it's original color
 checkBtn.addEventListener('click', checkButton);
+
+//TODO: once player presses play again button, reset userInput and game-message, give main background it's original color
+//TODO: keep track of high score
