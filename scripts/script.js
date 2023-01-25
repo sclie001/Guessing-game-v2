@@ -19,7 +19,7 @@ function checkButton(){
     //if num_tries is maxed; game over!, then disable check button
     if(game_over){
         message.textContent = 'GAME OVER!! 😥';
-        checkBtn.disabled = true;
+        disableCheckBtn();
         enableAgainBtn();
     }
     else{
@@ -56,6 +56,11 @@ function isTen(max_tries){
 function updateNumTries(){
     ++num_tries;
 
+}
+
+/*Disable check button at game over*/
+function disableCheckBtn(){
+    checkBtn.disabled = true;
 }
 
 /*Enbale again button at game over*/ 
