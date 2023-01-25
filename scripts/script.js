@@ -20,6 +20,7 @@ function checkButton(){
     if(game_over){
         message.textContent = 'GAME OVER!! 😥';
         checkBtn.disabled = true;
+        enableAgainBtn();
     }
     else{
         updateNumTries();
@@ -55,6 +56,11 @@ function isTen(max_tries){
 function updateNumTries(){
     ++num_tries;
 
+}
+
+/*Enbale again button at game over*/ 
+function enableAgainBtn(){
+    playAgainBtn.disabled = false;
 }
 
 //once player presses play again button, reset userInput and game-message, give main background it's original color
