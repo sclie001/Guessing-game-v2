@@ -57,6 +57,7 @@ function checkButton(){
 /*indicate game over */
 function gameOver(){
     message.textContent = 'GAME OVER!! 😥';
+    resetScore();
     showScore();
     disableCheckBtn();
     enableAgainBtn();
