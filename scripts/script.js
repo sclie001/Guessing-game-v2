@@ -54,11 +54,17 @@ function checkButton(){
     }
 }
 
+/*indicate game over */
 function gameOver(){
     message.textContent = 'GAME OVER!! 😥';
     scoreMsg.textContent = score;
     disableCheckBtn();
     enableAgainBtn();
+}
+
+/*reset score */
+function resetScore(){
+    score = 0;
 }
 
 /*deduct score when player guesses the wrong number*/
