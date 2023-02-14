@@ -47,7 +47,7 @@ function checkButton(){
             main_background.style.backgroundColor = '#cc7a00';
         }
     }
-    scoreMsg.textContent = score;  
+    showScore();  
 
     if(score == 0){
        gameOver();
@@ -57,7 +57,7 @@ function checkButton(){
 /*indicate game over */
 function gameOver(){
     message.textContent = 'GAME OVER!! 😥';
-    scoreMsg.textContent = score;
+    showScore();
     disableCheckBtn();
     enableAgainBtn();
 }
@@ -65,6 +65,11 @@ function gameOver(){
 /*reset score */
 function resetScore(){
     score = 0;
+}
+
+/*display score */
+function showScore(){
+    scoreMsg.textContent = score;
 }
 
 /*deduct score when player guesses the wrong number*/
