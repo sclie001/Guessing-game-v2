@@ -54,6 +54,18 @@ function checkButton(){
     }
 }
 
+//TODO: once player presses play again button, reset userInput and game-message, give main background it's original color
+/*allow the player to play the game again */
+function playAgain(){
+    resetInput();
+}
+
+/*reset user input*/
+function resetInput(){
+    userInput.value = "";
+}
+
+
 /*indicate game over */
 function gameOver(){
     message.textContent = 'GAME OVER!! 😥';
@@ -111,7 +123,9 @@ function enableAgainBtn(){
 }
 
 checkBtn.addEventListener('click', checkButton);
+playAgainBtn.addEventListener('click', playAgain);
 
-//TODO: create condition to check that the player is choosing a number between 1 and 20 (no more, or no less) and show message
-//TODO: once player presses play again button, reset userInput and game-message, give main background it's original color
+//TODO: make sure the player is choosing a number between 1 and 20 (no more, or no less) --min max values for input
+//TODO: require the player to enter a number before pressing "check" --require attribute for input
+//TODO: fix random number to not include 0
 //TODO: keep track of high score
