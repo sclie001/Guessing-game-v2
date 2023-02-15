@@ -58,6 +58,7 @@ function checkButton(){
 /*allow the player to play the game again */
 function playAgain(){
     resetInput();
+    resetGameMsg();
 }
 
 /*reset user input*/
@@ -65,7 +66,10 @@ function resetInput(){
     userInput.value = "";
 }
 
-
+/*reset game message */
+function resetGameMsg(){
+    message.textContent = "Start guessing...";
+}
 /*indicate game over */
 function gameOver(){
     message.textContent = 'GAME OVER!! 😥';
