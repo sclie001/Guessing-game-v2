@@ -59,6 +59,8 @@ function checkButton(){
 function playAgain(){
     resetInput();
     resetGameMsg();
+    resetBackground();
+    enableCheckBtn();
 }
 
 /*reset user input*/
@@ -70,6 +72,12 @@ function resetInput(){
 function resetGameMsg(){
     message.textContent = "Start guessing...";
 }
+
+/*reset main section background color */
+function resetBackground(){
+    main_background.style.backgroundColor = '#262626';
+}
+
 /*indicate game over */
 function gameOver(){
     message.textContent = 'GAME OVER!! 😥';
@@ -114,6 +122,11 @@ function updateNumTries(){
     num_tries++;
     console.log(num_tries);
 
+}
+
+/*Enable check button at play again*/
+function enableCheckBtn(){
+    checkBtn.disabled = false;
 }
 
 /*Disable check button at game over*/
