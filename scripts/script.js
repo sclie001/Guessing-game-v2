@@ -56,13 +56,20 @@ function checkButton(){
 
 /*allow the player to play the game again */
 function playAgain(){
+    disableAgainBtn();
     resetInput();
+    resetNumTries();
     resetGameMsg();
     resetBackground();
     enableCheckBtn();
-    disableAgainBtn();
+    
     randNum = Math.floor(Math.random() * (20 - 1 + 1) - 1 );
     console.log(randNum);
+}
+
+/*reset number of tries */
+function resetNumTries(){
+    num_tries = 0;
 }
 
 /*reset user input*/
