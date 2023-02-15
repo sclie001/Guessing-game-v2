@@ -163,6 +163,8 @@ function enableAgainBtn(){
 checkBtn.addEventListener('click', checkButton);
 playAgainBtn.addEventListener('click', playAgain);
 
+//TODO: only update tries when player guessed wrong
+
 //TODO: create a method for generating a random number and fix random number to not include 0
 
 //TODO: fix game over condition to include whether the num of tries were exhausted or score is 0
