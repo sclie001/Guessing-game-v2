@@ -28,7 +28,7 @@ function checkButton(){
     }
     else{
         console.log('checking number...')
-        updateNumTries();
+        
         if(userInput.value == randNum){
             console.log('You guessed the right number!');
             message.textContent = 'You guessed the right number!';
@@ -39,11 +39,13 @@ function checkButton(){
         }else if(userInput.value > randNum){
             console.log('You guessed too high');
             message.textContent = 'You guessed too high';
+            updateNumTries();
             deductScore();
             main_background.style.backgroundColor = '#cc0000';
         }else if(userInput.value < randNum){
             console.log('You guessed low');
             message.textContent = 'You guessed too low';
+            updateNumTries();
             deductScore();
             main_background.style.backgroundColor = '#cc7a00';
         }
@@ -162,8 +164,6 @@ function enableAgainBtn(){
 
 checkBtn.addEventListener('click', checkButton);
 playAgainBtn.addEventListener('click', playAgain);
-
-//TODO: only update tries when player guessed wrong
 
 //TODO: create a method for generating a random number and fix random number to not include 0
 
