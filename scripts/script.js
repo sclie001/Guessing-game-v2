@@ -170,8 +170,6 @@ function enableAgainBtn(){
 checkBtn.addEventListener('click', checkButton);
 playAgainBtn.addEventListener('click', playAgain);
 
-//TODO: create a method for generating a random number and fix random number to not include 0
-
 //TODO: fix game over condition to include whether the num of tries were exhausted or score is 0
 //TODO: fix where at game over score is 0 and not left at 1. Then remove reset score to 0
 
