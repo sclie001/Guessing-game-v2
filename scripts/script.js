@@ -48,7 +48,7 @@ function checkButton(){
     let game_over = isTen(max_tries);
     console.log(game_over);
 
-    if(game_over){
+    if(game_over || score ==  gameOver_score){
         gameOver();
     }
 }
