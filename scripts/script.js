@@ -177,7 +177,4 @@ function enableAgainBtn(){
 checkBtn.addEventListener('click', checkButton);
 playAgainBtn.addEventListener('click', playAgain);
 
-//TODO: make sure the player is choosing a number between 1 and 20 (no more, or no less) --min max values for input
-//TODO: require the player to enter a number before pressing "check" --require attribute for input
-
 //TODO: keep track of high score
