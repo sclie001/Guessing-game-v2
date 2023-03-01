@@ -101,7 +101,6 @@ function resetBackground(){
 /*indicate game over */
 function gameOver(){
     message.textContent = 'GAME OVER!! 😥';
-    resetScore(0);
     showScore();
     disableCheckBtn();
     enableAgainBtn();
