@@ -166,9 +166,6 @@ function enableAgainBtn(){
 checkBtn.addEventListener('click', checkButton);
 playAgainBtn.addEventListener('click', playAgain);
 
-//TODO: fix game over condition to include whether the num of tries were exhausted or score is 0
-//TODO: fix where at game over score is 0 and not left at 1. Then remove reset score to 0
-
 //TODO: make sure the player is choosing a number between 1 and 20 (no more, or no less) --min max values for input
 //TODO: require the player to enter a number before pressing "check" --require attribute for input
 
