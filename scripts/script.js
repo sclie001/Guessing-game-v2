@@ -115,6 +115,7 @@ function gameOver(){
     message.textContent = 'GAME OVER!! 😥';
     showScore();
     calculateHighScore();
+    showHighScore();
     disableCheckBtn();
     enableAgainBtn();
 }
@@ -123,12 +124,18 @@ function gameOver(){
 function calculateHighScore(){
     if(score > high_score){
         high_score = score;
+        console.log("high score: ", high_score);
     }
 }
 
 /*reset score */
 function resetScore(reset){
     score = reset;
+}
+
+/*display high score */
+function showHighScore(){
+    highScoreMsg.textContent = high_score;
 }
 
 /*display score */
