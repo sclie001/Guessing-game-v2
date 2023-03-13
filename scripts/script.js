@@ -6,6 +6,7 @@ const message = document.getElementById('game-message');
 const main_background = document.getElementById('main');
 const playAgainBtn = document.getElementById('play-again');
 const scoreMsg = document.getElementById('score');
+const highScoreMsg = document.getElementById('high_score')
 
 console.log(randNum);
 
