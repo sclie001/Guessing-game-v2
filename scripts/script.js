@@ -37,8 +37,10 @@ function checkButton(){
             message.textContent = 'You guessed the right number!';
             increaseScore();
             main_background.style.backgroundColor = '#006600';
-            disableCheckBtn()
-            enableAgainBtn()
+            calculateHighScore();
+            showHighScore();
+            disableCheckBtn();
+            enableAgainBtn();
         }else if(userInput.value > randNum){
             console.log('You guessed too high');
             message.textContent = 'You guessed too high';
