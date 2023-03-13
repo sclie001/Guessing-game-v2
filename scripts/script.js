@@ -113,8 +113,16 @@ function resetBackground(){
 function gameOver(){
     message.textContent = 'GAME OVER!! 😥';
     showScore();
+    calculateHighScore();
     disableCheckBtn();
     enableAgainBtn();
+}
+
+/*calculate high score*/
+function calculateHighScore(){
+    if(score > high_score){
+        high_score = score;
+    }
 }
 
 /*reset score */
